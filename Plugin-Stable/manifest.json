@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Name Replacer",
+    "description": "This extension replaces a user's real name with a fake name on webpages",
+    "version": "1.0",
+    "permissions": ["activeTab","tabs", "storage", "webNavigation", "<all_urls>"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": true
+    },
+    "browser_action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "run_at": "document_start"
+      }
+    ]
+  }
+  
