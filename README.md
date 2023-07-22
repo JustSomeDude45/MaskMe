@@ -1,9 +1,9 @@
 Save the respective files in a directory on your local system:
 
--manifest.json
--popup.html
--popup.js
--background.js
+- manifest.json 
+- popup.html 
+- popup.js 
+- background.js 
 
 Open the Google Chrome browser (Or brave browser), navigate to chrome://extensions/ (or brave://extensions/), and enable "Developer mode" (usually a switch in the top right corner).
 
